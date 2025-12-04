@@ -1,0 +1,525 @@
+:root{--accent:#2b6cb0;--danger:#e53e3e;--muted:#666}
+*{box-sizing:border-box}
+body{font-family:Inter, Arial, Helvetica, sans-serif;margin:0;background:#f7fafc;color:#111}
+.container{max-width:1000px;margin:20px auto;padding:16px}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--accent);color:#fff}
+.brand{margin:0}
+.nav-right a{margin-left:12px;color:#fff;text-decoration:none}
+.nav-right .btn-link{background:transparent;border:none;color:#fff;cursor:pointer;margin-left:12px}
+.hero{display:flex;gap:20px;align-items:center;padding:20px;background:#fff;border-radius:8px}
+.hero img{width:320px;border-radius:8px}
+.highlights{display:flex;gap:12px;margin-top:12px}
+.highlights article{background:#fff;padding:12px;border-radius:8px;flex:1}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-top:12px}
+.card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,0.05);}
+.card img{width:100%;height:160px;object-fit:cover}
+.card-body{padding:12px}
+.muted{color:var(--muted)}
+.price{font-weight:700;margin-top:6px}
+.card-actions{margin-top:8px}
+.btn{padding:8px 10px;border-radius:6px;border:none;cursor:pointer}
+.btn.save{background:var(--accent);color:#fff}
+.btn.edit{background:#f0ad4e;color:#fff;margin-right:6px}
+.btn.delete{background:var(--danger);color:#fff}
+.form{background:#fff;padding:12px;border-radius:8px;margin-bottom:12px}
+.form label{display:block;margin-bottom:8px}
+input,textarea{width:100%;padding:8px;border:1px solid #ddd;border-radius:6px}
+.form-actions{margin-top:8px}
+.footer{padding:12px;text-align:center;color:var(--muted);margin-top:16px}
+.chatbot{position:fixed;right:18px;bottom:18px;z-index:999}
+.chat-button{font-size:20px;padding:12px;border-radius:50%;border:none;background:var(--accent);color:#fff;cursor:pointer}
+.chat-window{width:260px;background:#fff;padding:10px;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,0.12);margin-top:8px}
+.login-form{max-width:420px;margin:12px auto;background:#fff;padding:16px;border-radius:8px}
+.login-form label{display:block;margin-bottom:8px}
+
+/* LOGIN MODERNO LINKMARKET */
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7f8fa;
+  padding: 20px;
+}
+
+.login-box {
+  background: #fff;
+  width: 100%;
+  max-width: 420px;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  text-align: left;
+}
+
+.login-title {
+  margin: 0 0 6px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+}
+
+.login-subtitle {
+  margin: 0 0 20px;
+  color: #555;
+}
+
+.input-label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: block;
+  color: #444;
+  font-weight: 500;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.input:focus {
+  border-color: #6a5cff;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #6a5cff, #8e76ff);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.btn-login:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(138, 122, 255, 0.25);
+}
+
+.login-hint {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 14px;
+  color: #777;
+}
+
+.login-logo {
+  width: 280px;
+  display: block;
+  margin: 0 auto 20px; /* centrado y con espacio inferior */
+}
+
+/* LOGO DEL HOME */
+.home-logo {
+  width: 200px;               /* tamaño  */
+  display: block;
+  margin: 0 auto 10px;        /* Centrado */
+}
+
+/* Home base */
+.home-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #fafafa;
+  padding: 0 40px 60px;
+  box-sizing: border-box;
+}
+
+/* Encabezado */
+.home-header {
+  text-align: center;
+  padding: 10px 0 20px;
+}
+
+.home-subtitle {
+  margin-top: 4px;
+  color: #666;
+  font-size: 16px;
+}
+
+.vendor-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Buscador */
+.search-box {
+  margin: 18px auto;
+  max-width: 480px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+/* Categorías */
+.category-section { margin-top: 20px; }
+
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 14px;
+}
+
+.category-card {
+  padding: 20px;
+  background: #fff;
+  border-radius: 14px;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  cursor: pointer;
+  transition: transform .15s;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Productos recomendados */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.product-card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;   /* ← evita recortes fuertes */
+  background: #fff;
+  border-radius: 12px;
+  padding: 6px;
+}
+
+
+
+
+/* Panel del vendedor */
+.vendor-panel { margin-top: 20px; }
+
+.vendor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+.vendor-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.vendor-number {
+  font-size: 40px;
+  font-weight: 800;
+  color: #4186ff;
+}
+
+.btn-vendor {
+  margin-top: 12px;
+  padding: 10px 18px;
+  background: #4186ff;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Botón Ver más */
+.btn-view {
+  background: #4186ff;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* HEADER MODERNO */
+.header {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  padding: 6px 20px;     
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 95px;
+  cursor: pointer;
+}
+
+.header-menu {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.header-link {
+  font-size: 16px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.header-link:hover {
+  color: #4186ff;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: #ff4040;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* ---------------- PERFIL ---------------- */
+
+.profile-container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.profile-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.profile-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 28px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  background: #ddd;
+  border-radius: 50%;
+}
+
+.profile-name {
+  font-size: 22px;
+  margin: 0;
+}
+
+.profile-email {
+  color: #666;
+  margin: 4px 0 0;
+}
+
+.btn-edit-profile {
+  margin-top: 16px;
+  width: 100%;
+  background: #4186ff;
+  color: #fff;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Listas */
+.profile-section-title {
+  margin-top: 14px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.profile-list {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 22px;
+}
+
+.profile-item {
+  padding: 16px;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.profile-item:last-child {
+  border-bottom: none;
+}
+
+.profile-item:hover {
+  background: #f6f8ff;
+}
+
+.logout-btn-large {
+  width: 100%;
+  padding: 14px;
+  background: #ff5050;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Footer pequeño */
+.profile-footer {
+  text-align: center;
+  margin-top: 18px;
+  color: #888;
+  font-size: 12px;
+}
+
+.avatar-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* 🔥 Contenedor de imagen uniforme para TODAS las tarjetas */
+.product-image-container {
+  width: 100%;
+  height: 200px;          /* ← Cambia a 220 o 250 si quieres imágenes más altas */
+  overflow: hidden;
+  border-radius: 12px;
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* La imagen ajustada dentro del contenedor */
+.product-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 👈 MENOS ZOOM */
+  border-radius: 12px;
+  background: #fff;
+  padding: 4px; /* opcional, ayuda a separar */
+}
+
+/* ----- AGREGAR / EDITAR PRODUCTO ----- */
+
+.add-product-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.add-product-card {
+  background: #fff;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.07);
+}
+
+.add-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+  color: #333;
+}
+
+.add-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 22px;
+  margin-top: 6px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.modal-card h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.modal-card input,
+.modal-card textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
