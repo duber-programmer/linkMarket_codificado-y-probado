@@ -1,4 +1,4 @@
-# Frontend Marketplace Mejorado - Evidencia AA4/AA3
+# Marketplace Mejorado - Evidencia AA4/AA3
 Proyecto React (Vite) mejorado para lucir profesional en el video de evidencia.
 
 ## Requisitos
